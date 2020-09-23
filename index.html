@@ -9,7 +9,7 @@
         }
 
         body {
-            background-color: rgb(5, 175, 62);
+            background-color: #F7E6F6;
             font-family: Verdana, sans-serif;
             margin: 0;
             color: whitesmoke;
@@ -45,19 +45,27 @@
             text-align: center;
         }
 
+        strong {
+          color: #383838;
+        }
+
+        li {
+          color: #383838;
+        }
+
         h2 {
             /* color: rgb (39, 55, 70); */
-            color: white;
+            color: #383838;
         }
 
         p {
-            color: rgb (191, 0, 255);
+            color: #383838;
             /* text-align: center */
         }
 
         hr {
             height: 24px;
-            background-color: beige;
+            background-color: #383838;
         }
 
         img {
@@ -186,6 +194,27 @@
             animation-duration: 1.5s;
         }
 
+        .topright {
+          position: absolute;
+          top: 8px;
+          right: 16px;
+          font-size: 18px;
+        }
+
+        .footer {
+          display: flex;
+          justify-content: center;
+          margin: 10px;
+        }
+
+        .contact-us {
+          color: #383838;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          margin: 3px;
+        }
+
         @-webkit-keyframes fade {
             from {
                 opacity: .4
@@ -238,15 +267,25 @@
 
             </div>
     </p>
-    <h1>LOVES ME, LOVES ME NOT</h1>
+
+    <div class="topright" >
+     <img src="images/Available-on-iTunes.png" onclick="window.open('https://itunes.apple.com/us/movie/loves-me-loves-me-not/id1526930817?ign-mpt=uo%3D4')" alt="Itunes logo" width="140" height="50">
+    </div>
+
+    <div>
+      <img src="images/DVD-Poster.png" alt="Movie poster" width="40%" height="50%">
+    </div>
 
     <p class="center big">
         <strong>Meet Ali. Sexy, charming, dreamy, and looking for love in all the wrong places.</strong>
     </p>
 
     <div class="video">
-        <iframe src="https://player.vimeo.com/video/353463739" frameborder="0" allow="autoplay; fullscreen"
-            allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/x5YullFDJyM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div >
+     <img src="images/Available-on-iTunes.png" onclick="window.open('https://itunes.apple.com/us/movie/loves-me-loves-me-not/id1526930817?ign-mpt=uo%3D4')" alt="Itunes logo" width="140" height="50">
     </div>
 
 
@@ -262,8 +301,8 @@
     <p>
         <div class="center">
             <div class="red-border">
-                <strong>Best Comedy Feature & the best overall Screenplay in
-                    Studio City Film Festival 2019
+                <strong>Best Comedy Feature & the best Screenplay in
+                    Studio City Film Festival
                 </strong>
             </div>
     </p>
@@ -352,13 +391,10 @@
     </p>
     <ul>
         <li>Genres: Comedy/Dark Comedy</li>
-        <li>Run Time: 80 minutes</li>
-        <li>Location: Filmed in Los Angeles, California USA</li>
-        <li>Language: English (CC in English and Spanish</li>
-        <li>Technical Specs:</li>
-        <li>4K shot on Red Dragon</li>
-        <li>Dolby 5.1 </li>
-        <li>Aspect Ratio 1:85</li>
+        <li>Run Time: 1 Hour, 23 minutes</li>
+        <li>Filmed in Los Angeles, California, USA</li>
+        <li>Distribution: Gravitas Ventures</li>
+        <li>Released: 2020</li>
     </ul>
 
     <hr>
@@ -411,7 +447,7 @@
 
     <div class="mySlides fade">
         <div class="numbertext">9 / 9</div>
-        <img src="images/lovesme.jpg" style="width:100%">
+        <img src="images/Paul.png" style="width:100%">
         <div class="text"></div>
     </div>
 
@@ -440,6 +476,14 @@
         <span class="dot" onclick="currentSlide(10)"></span>
 
     </div>
+
+    <footer class="footer">
+        <form class="contact-us">
+          <label for="fname">Contact us:</label><br>
+          <input type="text" id="contactUs" name="fname"><br>
+          <a class="mailto" href="mailto:waynepowers@mac.com">Send</a>
+        </form>
+    </footer>
 
     <script>
         var slideIndex = 1;
