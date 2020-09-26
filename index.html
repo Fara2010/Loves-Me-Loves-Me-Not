@@ -198,7 +198,6 @@
           position: absolute;
           top: 8px;
           right: 16px;
-          font-size: 18px;
         }
 
         .center-bottom {
@@ -209,6 +208,13 @@
         .center-right {
           text-align: right;
           margin-top:30px;
+        }
+
+        .top-left {
+          position: absolute;
+          top: 0px;
+          left: 16px;
+          font-size: 18px;
         }
 
         .inline-block {
@@ -227,6 +233,10 @@
           align-items: center;
           flex-wrap: wrap;
           margin: 3px;
+        }
+
+        .connect-share {
+          color: #383838;
         }
 
         @-webkit-keyframes fade {
@@ -265,6 +275,40 @@
                 font-size: 11px
             }
         }
+
+        @media all and (max-width:480px) {
+            .topright {
+              position: inherit;
+              top: none;
+              right: none;
+            }
+
+            .top-left {
+              position: inherit !important;
+              top: none !important;
+              left: none !important;
+              font-size: none !important;
+            }
+
+            .center-right {
+              text-align: center;
+              margin-top: 1px  !important;
+            }
+
+            .avai-itunes {
+              width: 100px;
+              height: 40px;
+            }
+
+            .social-icon {
+              width: 20px;
+              height: 20px;
+            }
+
+            .dvd-poster {
+              width: 80%;
+            }
+        }
     </style>
 </head>
 
@@ -281,30 +325,30 @@
 
             </div>
     </p>
+    <div>
+      <img src="images/DVD-Poster.png" class="dvd-poster" alt="Movie poster" width="40%" height="50%">
+    </div>
 
     <div class="topright" >
-     <img src="images/Available-on-iTunes.png" onclick="window.open('https://itunes.apple.com/us/movie/loves-me-loves-me-not/id1526930817?ign-mpt=uo%3D4')" alt="Itunes logo" width="220" height="90">
+     <img src="images/Available-on-iTunes.png" class="avai-itunes" onclick="window.open('https://itunes.apple.com/us/movie/loves-me-loves-me-not/id1526930817?ign-mpt=uo%3D4')" alt="Itunes logo" width="220" height="90">
 
     </div>
-    <div class="topRight">
+    <div class="top-left">
       <div class="center-right">
         <div class="inline-block">
-            <img src ="images/facebook.png" onclick="window.open('https://facebook.com/LovesMeLovesMeNotMovie')"   width="40px" height="40px">
+            <img src ="images/facebook.png" class="social-icon" onclick="window.open('https://facebook.com/LovesMeLovesMeNotMovie')"   width="40px" height="40px">
         </div>
 
         <div class="inline-block">
-            <img src ="images/twitter.png" onclick="window.open('https://twitter.com/lovesmemovie')"  width="40px" height="40px">
+            <img src ="images/twitter.png" class="social-icon"  onclick="window.open('https://twitter.com/lovesmemovie')"  width="40px" height="40px">
         </div>
 
         <div class="inline-block">
-            <img src ="images/instagram.png" onclick="window.open('https://instagram.com/lovesmelovesmenotmovie')"  width="40px" height="40px">
+            <img src ="images/instagram.png" class="social-icon"  onclick="window.open('https://instagram.com/lovesmelovesmenotmovie')"  width="40px" height="40px">
         </div>
       </div>
     </div>
 
-    <div>
-      <img src="images/DVD-Poster.png" alt="Movie poster" width="40%" height="50%">
-    </div>
 
     <p class="center big">
         <strong>Meet Ali. Sexy, charming, dreamy, and looking for love in all the wrong places.</strong>
@@ -499,6 +543,7 @@
     </div>
 
     <div class="center-bottom">
+    <div class="connect-share">CONNECT AND SHARE</div>
      <div class="inline-block">
          <img src ="images/facebook.png" onclick="window.open('https://facebook.com/LovesMeLovesMeNotMovie')"   width="40px" height="40px">
      </div>
