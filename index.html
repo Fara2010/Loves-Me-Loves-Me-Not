@@ -197,7 +197,7 @@
         .topright {
           position: absolute;
           top: 8px;
-          right: 16px;
+          right: 0px;
         }
 
         .center-bottom {
@@ -276,6 +276,11 @@
             }
         }
 
+        .avai-prime {
+          margin-top: 5px;
+          padding-right: 5px;
+        }
+
         @media all and (max-width:480px) {
             .topright {
               position: inherit;
@@ -296,8 +301,14 @@
             }
 
             .avai-itunes {
-              width: 100px;
+              width: 160px;
               height: 40px;
+              display: none;
+            }
+
+            .itunes-css {
+              width: 100px;
+              height: 60px;
             }
 
             .social-icon {
@@ -307,6 +318,12 @@
 
             .dvd-poster {
               width: 80%;
+            }
+
+            .avai-prime {
+                margin-top: 5px;
+                  width: 110px;
+                  height: 50px;
             }
         }
     </style>
@@ -327,11 +344,6 @@
     </p>
     <div>
       <img src="images/DVD-Poster.png" class="dvd-poster" alt="Movie poster" width="40%" height="50%">
-    </div>
-
-    <div class="topright" >
-     <img src="images/Available-on-iTunes.png" class="avai-itunes" onclick="window.open('https://itunes.apple.com/us/movie/loves-me-loves-me-not/id1526930817?ign-mpt=uo%3D4')" alt="Itunes logo" width="220" height="90">
-
     </div>
     <div class="top-left">
       <div class="center-right">
@@ -358,9 +370,18 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/x5YullFDJyM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-    <div >
-     <img src="images/Available-on-iTunes.png" onclick="window.open('https://itunes.apple.com/us/movie/loves-me-loves-me-not/id1526930817?ign-mpt=uo%3D4')" alt="Itunes logo" width="220" height="90">
+    <div>
+     <img src="images/Available-on-iTunes.png" class="itunes-css" onclick="window.open('https://itunes.apple.com/us/movie/loves-me-loves-me-not/id1526930817?ign-mpt=uo%3D4')" alt="Itunes logo" width="220" height="90">
     </div>
+
+  <div class="topright" >
+      <div class="inline-block" >
+       <img src="images/Available-on-iTunes.png" class="avai-itunes" onclick="window.open('https://itunes.apple.com/us/movie/loves-me-loves-me-not/id1526930817?ign-mpt=uo%3D4')" alt="Itunes logo" width="180" height="90">
+      </div>
+      <div class="inline-block" >
+       <img src="images/prime-icon.jpg" class="avai-prime" onclick="window.open('https://www.amazon.com/Loves-Me-Not/dp/B08B7PNXFZ/ref=sr_1_1?crid=20IKQHYJZ7T08&dchild=1&keywords=loves+me+loves+me+not+dvd&qid=1601098539&s=movies-tv&sprefix=loves+me+lo%2Cmovies-tv%2C199&sr=1-1')" alt="Itunes logo" width="180" height="80">
+     </div>
+   </div>
 
 
     <hr>
